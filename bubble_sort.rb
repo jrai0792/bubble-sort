@@ -30,6 +30,8 @@ def bubble_sort_by(array)
     p array
 end
 
+# Running the above two methods below
+
 test = [89,4,2,7,9,4,0,3,-1]
 bubble_sort(test)
 p test
