@@ -6,6 +6,7 @@ def bubble_sort(array)
       array[j], array[j + 1] = array[j + 1], array[j] if array[j] > array[j + 1]
     end
   end
+  array
 end
 
 # bubble_sort_by method
@@ -24,16 +25,16 @@ def bubble_sort_by(array)
     end
     len -= 1
   end
-  p array
+  array
 end
 
 # Running the above two methods below
 
 test = [89, 4, 2, 7, 9, 4, 0, 3, -1]
-bubble_sort(test)
-p test
+p bubble_sort(test)
 
 array_word = %w[hi hello hey hola game]
-bubble_sort_by(array_word) do |left, right|
+result = bubble_sort_by(array_word) do |left, right|
   left.length - right.length
 end
+p result
